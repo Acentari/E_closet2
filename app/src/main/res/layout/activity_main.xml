@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/black">
+
+            <Button
+                android:id="@+id/hoodies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hoodies"
+                android:background="@color/design_default_color_on_primary"
+                android:onClick="hoodies">
+
+            </Button>
+            <Button
+                android:id="@+id/Dresses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dresses"
+                android:textColor="@color/teal_200"
+                android:background="@color/black">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trousers"
+                android:textColor="@color/teal_200"
+                android:background="@color/black">
+
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coats"
+                android:textColor="@color/teal_200"
+                android:background="@color/black">
+
+            </Button>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jeans"
+                android:textColor="@color/teal_200"
+                android:background="@color/black">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belts"
+                android:textColor="@color/teal_200"
+                android:background="@color/black">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bags"
+                android:textColor="@color/teal_200"
+                android:background="@color/black">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scarves"
+                android:textColor="@color/teal_200"
+                android:background="@color/black">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shirts"
+                android:textColor="@color/teal_200"
+                android:background="@color/black">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jackets"
+                android:textColor="@color/teal_200"
+                android:background="@color/black">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blouses"
+                android:textColor="@color/teal_200"
+                android:background="@color/black">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gloves"
+                android:textColor="@color/teal_200"
+                android:background="@color/black">
+
+            </Button>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List1"
+                android:textSize="25dp">
+
+            </TextView>
+
+            <ListView
+                android:id="@+id/listDress"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:text="List2"
+                android:textSize="25dp" />
+
+            <ListView
+                android:id="@+id/ListBlouses"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+            </ListView>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/addFab">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_blouses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/addFab"
+        app:layout_constraintEnd_toEndOf="@+id/addFab"
+        app:layout_constraintStart_toStartOf="@+id/addFab" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addtrousses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/add_blouses"
+        app:layout_constraintEnd_toEndOf="@+id/add_blouses"
+        app:layout_constraintStart_toStartOf="@+id/add_blouses"
+         />
+</androidx.constraintlayout.widget.ConstraintLayout>

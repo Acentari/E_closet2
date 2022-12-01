@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">E_closet2</string>
+    <string-array name="spinnerSeason">
+        <item> Spring </item>
+        <item> Summer </item>
+        <item> autumn </item>
+        <item> Winter </item>
+
+    </string-array>
+
+    <string-array name="spinnerSport">
+        <item>Sport</item>
+        <item>Casual</item>
+        <item>Wending</item>
+        <item>Go for a Ride</item>
+        <item>Work</item>
+
+    </string-array>
+</resources>

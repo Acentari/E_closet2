@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsForClothes">
+
+
+    <Button
+        android:id="@+id/addClthes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD Clothes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995" />
+
+    <!--    <Button-->
+<!--        android:id="@+id/btnPrevious"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="previous"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/checkBox"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/btnNext"-->
+<!--        app:layout_constraintHorizontal_bias="0.158"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageClothes"-->
+<!--        app:layout_constraintVertical_bias="0.207"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--    </Button>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnNext"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:text="Next"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageClothes"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--    </Button>-->
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/checkBox"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="116dp"-->
+<!--        android:text="summer"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/addClthes"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        tools:layout_editor_absoluteX="50dp">-->
+
+<!--    </CheckBox>-->
+
+    <ImageView
+        android:id="@+id/imageClothes"
+        android:layout_width="319dp"
+        android:layout_height="210dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="28dp">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/save"
+        android:text="ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/addClthes"
+        app:layout_constraintTop_toBottomOf="@+id/imageClothes"
+        app:layout_constraintVertical_bias="0.965"
+        tools:layout_editor_absoluteX="0dp">
+
+    </Button>
+
+    <Spinner
+        android:id="@+id/spinnerSeason"
+        android:layout_width="294dp"
+        android:layout_height="46dp"
+        app:layout_constraintBottom_toTopOf="@+id/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageClothes"
+        app:layout_constraintVertical_bias="0.955" />
+
+    <Spinner
+        android:id="@+id/spinnerSport"
+        android:layout_width="291dp"
+        android:layout_height="43dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerSeason"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageClothes"
+        app:layout_constraintVertical_bias="0.916" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
